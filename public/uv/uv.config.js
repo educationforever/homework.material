@@ -1,6 +1,9 @@
 const k = new TextEncoder().encode(btoa(new Date().toISOString().slice(0, 10) + location.host).split('').reverse().join('').slice(6.7));
+
 self.__uv$config = {
+    // Keep your prefix standard
     prefix: "/uv/service/",
+    
     encodeUrl: s => {
         if (!s) return s;
         try {
@@ -28,10 +31,14 @@ self.__uv$config = {
             return new TextDecoder().decode(o) + s.slice(h);
         } catch { return decodeURIComponent(s); }
     },
+
+    // MOTOR SETTINGS
     bare: "https://bare.benrogu.li/",
-    handler: "/uv/uv.handler.js",
-    client: "/uv/uv.client.js", 
-    bundle: "/uv/uv.bundle.js",
-    config: "/uv/uv.config.js",
-    sw: "/uv/uv.sw.js"
+
+    // FIXED PATHS (Added /doge-v5/ to everything)
+    handler: "/doge-v5/uv/uv.handler.js",
+    client: "/doge-v5/uv/uv.client.js", 
+    bundle: "/doge-v5/uv/uv.bundle.js",
+    config: "/doge-v5/uv/uv.config.js",
+    sw: "/doge-v5/uv/uv.sw.js"
 };
