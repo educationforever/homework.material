@@ -13,7 +13,7 @@
   <br />
   <br />
 
-  <img width="1278" height="628" alt="image" src="preview.png" />
+  <img width="1278" height="628" alt="image" src="preview.png" />  
 
 
 </div>
