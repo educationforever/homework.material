@@ -28,6 +28,7 @@ self.__uv$config = {
             return new TextDecoder().decode(o) + s.slice(h);
         } catch { return decodeURIComponent(s); }
     },
+    bare: "https://bare.benrogu.li/",
     handler: "/uv/uv.handler.js",
     client: "/uv/uv.client.js", 
     bundle: "/uv/uv.bundle.js",
